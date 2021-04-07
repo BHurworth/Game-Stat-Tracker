@@ -5,7 +5,7 @@ export function Section1() {
     return (
         <>
       <section className = "section1">
-        <img src={bloodsportImage} alt="" className = "section1_img"></img>
+        <img src={bloodsportImage} alt=""></img>
         <h1>CS:GO STAT TRACKER</h1>
         <h5>Discover your true skill level</h5>
         <div className="custom-shape-divider-bottom-1615671062">
