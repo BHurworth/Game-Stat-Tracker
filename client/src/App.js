@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Data } from "./components/Data/Data.js";
 import { Navbar } from "./components/Navigation/Navbar.js";
+import {Section1} from "./components/Section1/Section1.js"
 
 import useStyles from "./styles";
 import "./App.css";
@@ -90,6 +91,7 @@ function App() {
   return (
     <div className="App">
       <Navbar></Navbar>
+      <Section1></Section1>
       <Data
         personaName={steamIdData[0].personaname}
         totalKills={csgoData[0].value}
