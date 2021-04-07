@@ -17,6 +17,9 @@
     padding: 1% 10%;
     z-index: 25;
     box-shadow: 1px 1px 5px grey;
+    position: absolute;
+    top: 0;
+    position: fixed;
 }
 .logo {
     cursor: pointer;
@@ -133,4 +136,84 @@
     left: 20vw;
     bottom: 10vh;
     z-index: 1;
+}
+
+#section2 {
+    margin-top: 50px;
+    height: 200vh;
+}
+
+.stat-header {
+    text-align:center;
+    font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#steam-id {
+    margin-top: 50px;
+    width: 370px
+}
+
+#stat-form {
+    display: flex;
+    align-items: center ;
+    flex-direction: column;
+}
+
+.table {
+    margin-top: 40px;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+.table td, table th {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.table th {
+    background-color: #eb6750;
+    color: #ffffff;
+}
+
+#submit-button {
+    margin-top: 20px;
+}
+
+
+@media (min-width: 992px) {
+    * {
+        font-size: 15px;
+    }
+
+    .section1 img {
+        height: 500px;
+        width: 600px;
+        background-color: transparent;
+        position: absolute;
+        left: 58vw;
+        bottom: 20vh;
+        z-index: 1;
+    }
+}
+
+@media (max-width:850px) {
+    * {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:695px) {
+     /*switch to mobile*/
+
+    .section1 h1 {
+        font-size: 4em;
+    }
+
+    .section1 h5 {
+        font-size: 1.5em;
+    }
+
 }
