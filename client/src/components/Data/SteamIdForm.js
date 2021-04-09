@@ -2,7 +2,6 @@ import axios from "axios";
 import React, { useState, useEffect } from "react";
 import { Data } from "../Data/Data.js";
 
-
 export function SteamIdForm() {
   const [steamIdData, setSteamIdData] = useState([{}]);
   const [csgoData, setCsgoData] = useState([
