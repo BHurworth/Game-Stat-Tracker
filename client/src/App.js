@@ -5,6 +5,7 @@ import React, { useState, useEffect } from "react";
 
 import csgoStat from "./pages/csgoStat.js";
 import index from "./pages/index.js";
+import rlStat from "./pages/rlStat.js";
 
 import {
   BrowserRouter as Router,
@@ -12,6 +13,7 @@ import {
   Switch,
   Link,
   Redirect,
+  BrowserRouter,
 } from "react-router-dom";
 
 
@@ -22,8 +24,10 @@ import "./App.css";
 
 function App() {
   return (
-   <Router>
-     <Route path="/" component={index} />
+    <Router>
+      <Route exact path="/" component={index} />
+      <Route exact path="/csgo" component={csgoStat} />
+      <Route exact path="/rl" component={rlStat} />
     </Router>
   );
 }
