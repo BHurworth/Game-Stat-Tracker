@@ -1,11 +1,23 @@
 import React from 'react'
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Link,
+  Redirect,
+} from "react-router-dom";
+
 
 function Cards(props) {
+
+    
     return (
-        <div className="card">
+      <div className="card" >
+            <Link to={props.link} className="imag">
             <img src={props.img}></img>
-        </div>
-    )
+            </Link>
+      </div>
+    );
 }
 
 export default Cards
