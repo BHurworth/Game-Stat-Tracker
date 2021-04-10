@@ -111,6 +111,10 @@ background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), l
     padding-top: 300px;
 }
 
+.reactNavLink {
+  text-decoration: none;
+}
+
 
 .section1 h1 {
     text-align: center;
