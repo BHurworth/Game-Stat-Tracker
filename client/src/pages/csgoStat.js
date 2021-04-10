@@ -7,7 +7,6 @@ function index() {
     return (
         <div className="App">
           <Navbar></Navbar>
-          <Section1></Section1>
           <SteamIdForm></SteamIdForm>
         </div>
     );
