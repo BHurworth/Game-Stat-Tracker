@@ -1,16 +1,16 @@
-import React from 'react'
-import bloodsportImage from "../../images/Bloodsport2.png"
+import React from "react";
+import bloodsportImage from "../../images/Bloodsport2.png";
 import targetImage from "../../images/target.png";
 import Cards from "../../components/Navigation/Cards.js";
 
 export function Section1() {
-    return (
-      <>
-        <section className="section1">
-          {/* <img src={targetImage} alt=""></img> */}
-          <h1>STAT TRACKER</h1>
-          <h5>Discover your true skill level</h5>
-          {/* <div className="custom-shape-divider-bottom-1615671062">
+  return (
+    <>
+      <section className="section1">
+        {/* <img src={targetImage} alt=""></img> */}
+        <h1>STAT TRACKER</h1>
+        <h5>Discover your true skill level</h5>
+        {/* <div className="custom-shape-divider-bottom-1615671062">
             <svg
               data-name="Layer 1"
               xmlns="http://www.w3.org/2000/svg"
@@ -23,11 +23,8 @@ export function Section1() {
               ></path>
             </svg>
           </div> */}
-          <Cards />
-        </section>
-      </>
-    );
+        <Cards />
+      </section>
+    </>
+  );
 }
-
-
-    
