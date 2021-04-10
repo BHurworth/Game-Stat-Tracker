@@ -93,19 +93,27 @@
     fill: #FFFFFF;
 } */
 
+.imag {
+    background: none;
+}
+
+
 .section1 {
+    padding-top: 1000px;
     position: relative;
     display: flex;
     justify-content: center;
     height: 100vh;
     width: 100%;
     flex-direction: column;
-    background-image: linear-gradient(-45deg, #FFC796 0%, #ff6b6b 100%);
+background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+ background-blend-mode: multiply;
     padding-top: 300px;
 }
 
 
 .section1 h1 {
+    text-align: center;
     margin-left: 4vw;
     font-size: 8em;
     margin-top: -20vh;
@@ -118,6 +126,7 @@
 
 
 .section1 h5 {
+    text-align: center;
     color: white;
     z-index: 0;
     text-transform: uppercase; ;
