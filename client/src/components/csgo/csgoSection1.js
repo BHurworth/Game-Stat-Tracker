@@ -1,10 +1,9 @@
 import React from "react";
 import bloodsportImage from "../../images/Bloodsport2.png";
 
-export function page2Section1() {
+export function CsgoSection1() {
   return (
-    <>
-      <section className="section1">
+      <section className="csgoSection1">
         <img src={bloodsportImage} alt=""></img>
         <h1>CS:GO STAT TRACKER</h1>
         <h5>Discover your true skill level</h5>
@@ -22,6 +21,5 @@ export function page2Section1() {
           </svg>
         </div>
       </section>
-    </>
   );
 }
