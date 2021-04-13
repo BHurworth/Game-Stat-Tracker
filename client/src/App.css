@@ -106,9 +106,79 @@
     height: 100vh;
     width: 100%;
     flex-direction: column;
-background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
- background-blend-mode: multiply;
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    background-blend-mode: multiply;
     padding-top: 300px;
+}
+
+.csgoSection1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 97vh;
+    width: 100%;
+    flex-direction: column;
+    background-image: linear-gradient(-45deg, #FFC796 0%, #ff6b6b 100%);
+}
+
+
+.csgoSection1 h1 {
+    margin-left: 4vw;
+    font-size: 8em;
+    margin-top: -20vh;
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    z-index: 0;
+    text-transform: uppercase;
+}
+
+
+.csgoSection1 h5 {
+    color: white;
+    z-index: 0;
+    text-transform: uppercase; ;
+    margin-left: 4.5vw;
+    font-size: 2.7em;
+    margin-top: 6vh;
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.csgoSection1 img {
+    height: 300px;
+    width: 300px;
+    background-color: transparent;
+    position: absolute;
+    left: 20vw;
+    bottom: 10vh;
+    z-index: 1;
+}
+
+
+.custom-shape-divider-bottom-1615671062 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    background: none;
+}
+
+.custom-shape-divider-bottom-1615671062 svg {
+    position: relative;
+    display: block;
+    width: calc(144% + 1.3px);
+    height: 107px;
+    transform: rotateY(180deg);
+    background: none;
+    
+}
+
+.custom-shape-divider-bottom-1615671062 .shape-fill {
+    fill: #FFFFFF;
 }
 
 .reactNavLink {
@@ -239,4 +309,20 @@ background: none;
         font-size: 1.5em;
     }
 
+}
+
+@media (min-width: 992px) {
+    * {
+        font-size: 15px;
+    }
+
+    .csgoSection1 img {
+        height: 500px;
+        width: 600px;
+        background-color: transparent;
+        position: absolute;
+        left: 58vw;
+        bottom: 20vh;
+        z-index: 1;
+    }
 }
