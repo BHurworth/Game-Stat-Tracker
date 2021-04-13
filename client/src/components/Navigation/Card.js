@@ -13,7 +13,7 @@ function Cards(props) {
     
     return (
       <div className="card" >
-            <Link to={props.link} className="imag">
+            <Link to={props.link} className="imag" id = {props.id}>
             <img src={props.img}></img>
             </Link>
       </div>

@@ -16,6 +16,7 @@ function Cards() {
     return (
       <div className="card-list">
         <Card
+          id="nA"
           title="Rocket League"
           img="https://upload.wikimedia.org/wikipedia/commons/e/e0/Rocket_League_coverart.jpg"
           link="/rl"
@@ -28,6 +29,7 @@ function Cards() {
         />
 
         <Card
+          id="nA"
           title="Rocket League"
           img="https://i.redd.it/46m4m8vwoxv31.png"
           link="/lol"
