@@ -1,16 +1,6 @@
 import React from 'react'
 import Card from "../../components/Navigation/Card.js";
 
-
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  Link,
-  Redirect,
-} from "react-router-dom";
-
-
 function Cards() {
 
     return (
