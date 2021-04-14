@@ -11,7 +11,6 @@ export const getCsgoStats = async (req, res) => {
     const profileResponse = await fetch(api_url);
     const profile = await profileResponse.json();
 
-    // console.log(profile.json());
     res.send(profile);
     res.status(200);
 
