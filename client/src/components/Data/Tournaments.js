@@ -2,9 +2,9 @@ import React from 'react'
 
 function Tournaments(props) {
     return (
-        <div className = {props.className}>
-            <h1>Tournaments</h1>
-            <h2>weawdas</h2>
+        <div id="tourn-container" className = {props.className}>
+            <h1 className = "tourn-title">Tournaments</h1>
+
         </div>
     )
 }
