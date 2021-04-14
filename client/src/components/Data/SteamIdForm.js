@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useState, useEffect } from "react";
 import { Data } from "../Data/Data.js";
 
-export function SteamIdForm() {
+function SteamIdForm(props) {
   const [steamIdData, setSteamIdData] = useState([{}]);
   const [csgoData, setCsgoData] = useState([
     {},
@@ -45,10 +45,10 @@ export function SteamIdForm() {
   });
 
   return (
-    <div id="section2">
+    <div id="section2" className={props.className}>
+      <h1>CS:GO personal stat checker</h1>
       <form id="stat-form">
-        <h1 class="stat-header">Enter your Steam ID</h1>
-        <label>
+        <label className = "steamInput">
           steamID:
           <input
             type="text"
@@ -80,3 +80,5 @@ export function SteamIdForm() {
     </div>
   );
 }
+
+export default SteamIdForm;
