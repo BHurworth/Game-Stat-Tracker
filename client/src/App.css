@@ -1,72 +1,71 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Lato', sans-serif;
-    background-color: white;
-    color: black;
-    scroll-behavior: smooth;
-    font-size: 17px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  background-color: white;
+  color: black;
+  scroll-behavior: smooth;
+  font-size: 17px;
 }
 
 .nav-header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1% 10%;
-    z-index: 25;
-    box-shadow: 1px 1px 5px grey;
-    position: absolute;
-    top: 0;
-    position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 10%;
+  z-index: 25;
+  box-shadow: 1px 1px 5px grey;
+  position: absolute;
+  top: 0;
+  position: fixed;
 }
 .logo {
-    cursor: pointer;
-    margin-right: auto;
-    font-weight: bold;
-    font-size: 1.7em;
+  cursor: pointer;
+  margin-right: auto;
+  font-weight: bold;
+  font-size: 1.7em;
 }
 
 .logo a {
-    font-size: 0.8em;
-    text-decoration: none;
+  font-size: 0.8em;
+  text-decoration: none;
 }
 
 .nav-links {
-    list-style: none;
+  list-style: none;
 }
 
 .nav-links li {
-    display: inline-block;
-    padding: 0px 20px;
-    font-size: 1em;
+  display: inline-block;
+  padding: 0px 20px;
+  font-size: 1em;
 }
 
 .nav-links li a {
-    transition: all 0.3s ease 0s;
-    text-decoration: none;
-    font-size: 1em;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  font-size: 1em;
 }
-
-
 
 .table {
-    margin-top: 40px;
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 16px;
+  margin-top: 40px;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
 }
 
-.table td, table th {
-    padding: 12px 15px;
-    border: 1px solid #ddd;
-    text-align: center;
+.table td,
+table th {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: center;
 }
 
 .table th {
-    background-color: #eb6750;
-    color: #ffffff;
+  background-color: #eb6750;
+  color: #ffffff;
 }
 
 /* .custom-shape-divider-bottom-1615671062 {
@@ -94,191 +93,198 @@
 } */
 
 .imag {
-    background: none;
+  background: none;
 }
 
-
 .section1 {
-    padding-top: 1000px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    width: 100%;
-    flex-direction: column;
-    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
-    background-blend-mode: multiply;
-    padding-top: 300px;
+  padding-top: 1000px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  background: linear-gradient(to bottom, #323232 0%, #3f3f3f 40%, #1c1c1c 150%),
+    linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(0, 0, 0, 0.25) 200%
+    );
+  background-blend-mode: multiply;
+  padding-top: 300px;
 }
 
 .csgoSection1 {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    height: 97vh;
-    width: 100%;
-    flex-direction: column;
-    background-image: linear-gradient(-45deg, #FFC796 0%, #ff6b6b 100%);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 97vh;
+  width: 100%;
+  flex-direction: column;
+  background-image: linear-gradient(-45deg, #ffc796 0%, #ff6b6b 100%);
 }
-
 
 .csgoSection1 h1 {
-    margin-left: 4vw;
-    font-size: 8em;
-    margin-top: -20vh;
-    background-color: transparent;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    z-index: 0;
-    text-transform: uppercase;
+  margin-left: 4vw;
+  font-size: 8em;
+  margin-top: -20vh;
+  background-color: transparent;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  z-index: 0;
+  text-transform: uppercase;
 }
 
-
 .csgoSection1 h5 {
-    color: white;
-    z-index: 0;
-    text-transform: uppercase; ;
-    margin-left: 4.5vw;
-    font-size: 2.7em;
-    margin-top: 6vh;
-    background-color: transparent;
-    font-family: 'Montserrat', sans-serif;
-
+  color: white;
+  z-index: 0;
+  text-transform: uppercase;
+  margin-left: 4.5vw;
+  font-size: 2.7em;
+  margin-top: 6vh;
+  background-color: transparent;
+  font-family: "Montserrat", sans-serif;
 }
 
 .csgoSection1 img {
-    height: 300px;
-    width: 300px;
-    background-color: transparent;
-    position: absolute;
-    left: 20vw;
-    bottom: 10vh;
-    z-index: 1;
+  height: 300px;
+  width: 300px;
+  background-color: transparent;
+  position: absolute;
+  left: 20vw;
+  bottom: 10vh;
+  z-index: 1;
 }
 
-
 .custom-shape-divider-bottom-1615671062 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    background: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  background: none;
 }
 
 .custom-shape-divider-bottom-1615671062 svg {
-    position: relative;
-    display: block;
-    width: calc(144% + 1.3px);
-    height: 107px;
-    transform: rotateY(180deg);
-    background: none;
-    
+  position: relative;
+  display: block;
+  width: calc(144% + 1.3px);
+  height: 107px;
+  transform: rotateY(180deg);
+  background: none;
 }
 
 .custom-shape-divider-bottom-1615671062 .shape-fill {
-    fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .reactNavLink {
   text-decoration: none;
 }
 
-
 .section1 h1 {
-    text-align: center;
-    margin-left: 4vw;
-    font-size: 8em;
-    margin-top: -20vh;
-    background-color: transparent;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    z-index: 0;
-    text-transform: uppercase;
+  text-align: center;
+  margin-left: 4vw;
+  font-size: 8em;
+  margin-top: -20vh;
+  background-color: transparent;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  z-index: 0;
+  text-transform: uppercase;
 }
-
 
 .section1 h5 {
-    text-align: center;
-    color: white;
-    z-index: 0;
-    text-transform: uppercase; ;
-    margin-left: 4.5vw;
-    font-size: 2.7em;
-    margin-top: 6vh;
-    background-color: transparent;
-    font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  color: white;
+  z-index: 0;
+  text-transform: uppercase;
+  margin-left: 4.5vw;
+  font-size: 2.7em;
+  margin-top: 6vh;
+  background-color: transparent;
+  font-family: "Montserrat", sans-serif;
 }
-
 
 #section2 {
-    margin-top: 50px;
-    height: 200vh;
+  margin-top: 5vh;
+  height: 200vh;
+
 }
 
-.stat-header {
-    text-align:center;
-    font-size: 3em;
-    font-family: 'Montserrat', sans-serif;
+#section2 h1 {
+  font-size: 4em;
+  text-align: center;
+  background: none;
+  color: black;
+    font-family: "Montserrat", sans-serif;
 }
+
 
 #steam-id {
-    margin-top: 50px;
-    width: 370px
+  margin-top: 50px;
+  width: 370px;
+}
+
+.steamInput {
+  background: none;
 }
 
 #stat-form {
-    display: flex;
-    align-items: center ;
-    flex-direction: column;
+    margin-top: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: none;
 }
 
 .table {
-    margin-top: 40px;
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 16px;
+  margin-top: 40px;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
 }
 
-.table td, table th {
-    padding: 12px 15px;
-    border: 1px solid #ddd;
-    text-align: center;
+.table td,
+table th {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: center;
 }
 
 .table th {
-    background-color: #eb6750;
-    color: #ffffff;
+  background-color: #eb6750;
+  color: #ffffff;
 }
 
 #submit-button {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 #nA {
-    opacity: 10%;
+  opacity: 10%;
 }
 
 .comingSoonh1 {
-    top: 40%;
-    left: 50%;
-    position: absolute;
-    text-align: center;
-    font-size: 6em;
-    transform: translate(-50%, -50%);
+  top: 40%;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  font-size: 6em;
+  transform: translate(-50%, -50%);
 }
 
 .comingSoonh2 {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-size: 3em;
-    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 3em;
+  position: absolute;
 }
 .card {
-    background: none;
+  background: none;
   border-radius: 0.2rem;
   padding: 0.2rem 0.2rem;
 }
@@ -288,13 +294,13 @@
 }
 
 .card img {
-      border-radius: 5rem;
-    width: 400px;
-    height: 400px;
+  border-radius: 5rem;
+  width: 400px;
+  height: 400px;
 }
 
-.card-list{
-background: none;
+.card-list {
+  background: none;
   margin-top: 100px;
   width: 100vw;
   display: flex;
@@ -305,45 +311,82 @@ background: none;
   z-index: 10;
 }
 
+.csgo-card-list {
+  margin-top: 100px;
+  width: 99.1vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  z-index: 10;
+  gap: 30em;
+  height: 100px;
+  line-height: 100px;
+  background-image: linear-gradient(-45deg, #ffc796 0%, #ff6b6b 100%);
+  border-radius: 15px 300px;
+}
+
+.tab {
+  display: none;
+}
+
+.active-tab {
+  display: block;
+}
+
+.csgo-card-list h1 {
+  gap: 10em;
+  font-size: 2em;
+  font-family: "Montserrat", sans-serif;
+  background: none;
+  color: white;
+}
+
+.csgo-card-list h1:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.stat-header {
+  color: black;
+}
 
 @media (min-width: 992px) {
-    * {
-        font-size: 15px;
-    }
-
+  * {
+    font-size: 15px;
+  }
 }
 
-@media (max-width:850px) {
-    * {
-        font-size: 14px;
-    }
+@media (max-width: 850px) {
+  * {
+    font-size: 14px;
+  }
 }
 
-@media (max-width:695px) {
-     /*switch to mobile*/
+@media (max-width: 695px) {
+  /*switch to mobile*/
 
-    .section1 h1 {
-        font-size: 4em;
-    }
+  .section1 h1 {
+    font-size: 4em;
+  }
 
-    .section1 h5 {
-        font-size: 1.5em;
-    }
-
+  .section1 h5 {
+    font-size: 1.5em;
+  }
 }
 
 @media (min-width: 992px) {
-    * {
-        font-size: 15px;
-    }
+  * {
+    font-size: 15px;
+  }
 
-    .csgoSection1 img {
-        height: 500px;
-        width: 600px;
-        background-color: transparent;
-        position: absolute;
-        left: 58vw;
-        bottom: 20vh;
-        z-index: 1;
-    }
+  .csgoSection1 img {
+    height: 500px;
+    width: 600px;
+    background-color: transparent;
+    position: absolute;
+    left: 58vw;
+    bottom: 20vh;
+    z-index: 1;
+  }
 }
