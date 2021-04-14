@@ -1,9 +1,10 @@
 import fetch from "node-fetch";
 
-export const getCsgoTournament = async (req, res) => {
+export const getCsgoTournaments = async (req, res) => {
 
   try {
-    const api_url = `https://api.pandascore.co/csgo/tournaments`;
+    console.log("yo");
+    const api_url = `https://api.pandascore.co/csgo/tournaments/upcoming?token=L-KSCBAZ-Cxv71k544VKEqbfcH7t1ZNUrdBFThn-P8fFEG_EFlY`;
 
     const profileResponse = await fetch(api_url);
     const profile = await profileResponse.json();
