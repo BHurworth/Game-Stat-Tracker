@@ -12,7 +12,7 @@ function index() {
           <Navbar></Navbar>
           <CsgoSection1></CsgoSection1>
           <CsgoNav></CsgoNav>
-        </>
+          </>
     );
 }
 
