@@ -359,6 +359,24 @@ table th {
   text-align: center;
 }
 
+#tournament-cards {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  gap: 200px;
+}
+
+.tourn-title {
+  font-size: 2em;
+}
+
+.tourn-starttime {
+  margin-top: 25px;
+}
+
+
 @media (min-width: 992px) {
   * {
     font-size: 15px;
