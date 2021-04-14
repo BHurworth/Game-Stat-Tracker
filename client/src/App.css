@@ -209,8 +209,7 @@ table th {
 
 #section2 {
   margin-top: 5vh;
-  height: 200vh;
-
+  height: 100vh;
 }
 
 #section2 h1 {
@@ -218,9 +217,8 @@ table th {
   text-align: center;
   background: none;
   color: black;
-    font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-
 
 #steam-id {
   margin-top: 50px;
@@ -232,7 +230,7 @@ table th {
 }
 
 #stat-form {
-    margin-top: 100px;
+  margin-top: 100px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -349,6 +347,16 @@ table th {
 
 .stat-header {
   color: black;
+}
+
+#tourn-container {
+  height: 100vh;
+}
+
+.tourn-title {
+  margin-top: 50px;
+  font-size: 4em;
+  text-align: center;
 }
 
 @media (min-width: 992px) {
