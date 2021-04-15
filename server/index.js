@@ -14,6 +14,10 @@ app.use(bodyParser.urlencoded({ limit: "20mb", extended: true }));
 app.use("/csgo", csgoRoutes);
 app.use("/steam", steamRoutes);
 
+if(process.env.NODE_ENV ==='production'){
+  app.use(express.static('client/build'))
+}
+
 const CONNECTION_URL =
   "mongodb+srv://benHur:1234@cluster0.oyyi2.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
