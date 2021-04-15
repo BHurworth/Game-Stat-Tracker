@@ -5,8 +5,8 @@ function TournamentDataCards(props) {
   var endTimeUk = new Date(props.endTime);
   beginTimeUk = beginTimeUk.toString();
   endTimeUk = endTimeUk.toString();
-  beginTimeUk = beginTimeUk.split("+")[0]
-  endTimeUk = endTimeUk.split("+")[0];
+  beginTimeUk = beginTimeUk.split("(")[0]
+  endTimeUk = endTimeUk.split("(")[0];
 
 
   return (
