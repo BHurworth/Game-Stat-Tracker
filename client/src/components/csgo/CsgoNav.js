@@ -5,14 +5,21 @@ import Tournaments from "../Data/Tournaments.js";
 import axios from "axios";
 import "../../App.css";
 
+
+
+
 export function CsgoNav() {
 
-     const getData = (e) => {
-       const url = "http://localhost:5000/csgo/tournaments";
+  const [dataLoaded, setdataLoaded] = useState(false);
 
-       axios.get(url).then((response) => settournamentData(response.data));
-      //  settournamentData(response.data);
-     };
+  const getData = () => {
+    const url = "http://localhost:5000/csgo/tournaments";
+
+    axios.get(url).then((response) => {settournamentData(response.data)
+    setdataLoaded(true);});
+    
+  };
+
 
   const [mounted, setMounted] = useState(false);
 
@@ -24,24 +31,29 @@ export function CsgoNav() {
     setMounted(true);
   }, []);
 
-
   const [toggleState, setToggleState] = useState(1);
 
   const toggleTab = (index) => {
     setToggleState(index);
   };
 
-   const [tournamentData, settournamentData] = useState([{}]);
+  const [tournamentData, settournamentData] = useState([{}]);
+
+  if(dataLoaded===false) {
+    return (<h1>LOADING</h1>)
+  }
 
 
-
+  else if (dataLoaded===true) {
   return (
     <>
       <div className="csgo-card-list">
         <h1 onClick={() => toggleTab(1)}>Stat tracker</h1>
-        <h1 onClick={(e) => {
-          toggleTab(2)
-        }}>
+        <h1
+          onClick={(e) => {
+            toggleTab(2);
+          }}
+        >
           Tournaments
         </h1>
         <h1
@@ -57,8 +69,8 @@ export function CsgoNav() {
       ></SteamIdForm>
       <Tournaments
         className={toggleState === 2 ? "active-tab" : "tab"}
-        data = {tournamentData}
+        data={tournamentData}
       ></Tournaments>
     </>
   );
-}
+}}
