@@ -18,8 +18,11 @@ function SteamIdForm(props) {
   ]);
 
   const getDatas = (e, id) => {
-    let csgoUrl = `http://localhost:5000/csgo/${id}`;
-    let steamUrl = `http://localhost:5000/steam/${id}`;
+    let csgoUrl = `http://localhost:5000/csgo/${id}`;                     
+    //`https://game-stat-tracker-server.herokuapp.com/csgo/${id}`;
+    let steamUrl = `http://localhost:5000/steam/${id}`
+    
+    ///`https://game-stat-tracker-server.herokuapp.com/steam/${id}`;
 
     const requestCsgo = axios.get(csgoUrl);
     const requestSteam = axios.get(steamUrl);
@@ -47,28 +50,25 @@ function SteamIdForm(props) {
   return (
     <div id="section2" className={props.className}>
       <h1>CS:GO personal stat checker</h1>
-      <form id="stat-form">
-        <label className = "steamInput">
-          steamID:
-          <input
-            type="text"
-            id="steam-id"
-            placeholder="Enter Steam64 ID"
-            name="steamID"
-            onChange={(event) => {
-              const value = event.target.value;
-              setSteamId({ ...steamId, steamId: value });
-              console.log(steamId);
-            }}
-          />
-        </label>
-        <input
-          type="submit"
-          id="submit-button"
-          value="Submit ID"
-          onClick={(e) => getDatas(e, steamId.steamId)}
-        />
-      </form>
+  
+        <div class="search_wrap search_wrap_6">
+          <div class="search_box">
+            <input
+              name="steamID"
+              type="text"
+              class="input"
+              placeholder="Enter Steam64 ID"
+              onChange={(event) => {
+                const value = event.target.value;
+                setSteamId({ ...steamId, steamId: value });
+                console.log(steamId);
+              }}
+            ></input>
+            <div class="btn" onClick={(e) => getDatas(e, steamId.steamId)}>
+              <p>Enter</p>
+            </div>
+          </div>
+        </div>
 
       <Data
         personaName={steamIdData[0].personaname}
