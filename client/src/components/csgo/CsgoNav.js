@@ -42,7 +42,7 @@ export function CsgoNav() {
   const [tournamentData, settournamentData] = useState([{}]);
 
   if (dataLoaded === false) {
-    return <Spinner></Spinner>
+    return <Spinner size="large"></Spinner>
   } else if (dataLoaded === true) {
     return (
       <>
