@@ -5,6 +5,7 @@ import {CsgoProfile} from "../Data/CsgoProfile.js"
 import Spinner from "../Misc/Spinner.js";
 import {CsgoData} from "./CsgoData"
 
+
 function SteamIdForm(props) {
   const [steamIdData, setSteamIdData] = useState([{}]);
   const [csgoData, setCsgoData] = useState([
@@ -21,6 +22,7 @@ function SteamIdForm(props) {
   ]);
 
   const getDatas = (e, id) => {
+    setfindingStats(false);
     setstatLoader(true);
     let csgoUrl = `http://localhost:5000/csgo/${id}`;                     
     //`https://game-stat-tracker-server.herokuapp.com/csgo/${id}`;
@@ -67,6 +69,7 @@ function SteamIdForm(props) {
 return (
   <div id="section2" className={props.className}>
     <h1>CS:GO personal stat checker</h1>
+    <h5 id ="steam-id-example">Try</h5>
 
     <div class="search_wrap search_wrap_6">
       <div class="search_box">
@@ -103,7 +106,7 @@ return (
         profileUrl={steamIdData[0].profileurl}
       ></CsgoProfile>
     ) : null}
-    {findingStats ? (<CsgoData></CsgoData>):null}
+    {findingStats ? <CsgoData data={csgoData}></CsgoData> : null}
   </div>
 );
   }
