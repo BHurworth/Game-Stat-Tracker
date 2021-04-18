@@ -1,14 +1,12 @@
 import React from "react";
 
-function Spinner() {
+function Spinner(props) {
   return (
-    <div className="spinner-wrapper">
-      <div class="loader">
+      <div className={`loader ${props.size}`}>
         <span></span>
         <span></span>
         <span></span>
       </div>
-    </div>
   );
 }
 
