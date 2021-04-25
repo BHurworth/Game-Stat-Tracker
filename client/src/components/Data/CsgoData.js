@@ -17,8 +17,16 @@ export function CsgoData(props) {
   
   return (
     <div className="csgo-data">
-      <CsgoStatCard data={props} dataNumbers={dataNumbers}></CsgoStatCard>
-      <CsgoStatCard data={props} dataNumbers={dataNumbers2}></CsgoStatCard>
+      <CsgoStatCard
+        data={props}
+        dataNumbers={dataNumbers}
+        title="General statistics"
+      ></CsgoStatCard>
+      <CsgoStatCard
+        data={props}
+        dataNumbers={dataNumbers2}
+        title="Gun statistics"
+      ></CsgoStatCard>
     </div>
   );
 }
