@@ -24,11 +24,15 @@ function SteamIdForm(props) {
   const getDatas = (e, id) => {
     setfindingStats(false);
     setstatLoader(true);
-    let csgoUrl = `http://localhost:5000/csgo/${id}`;                     
-    //`https://game-stat-tracker-server.herokuapp.com/csgo/${id}`;
-    let steamUrl = `http://localhost:5000/steam/${id}`
+    let csgoUrl = `http://localhost:5000/csgo/${id}`;
     
-    ///`https://game-stat-tracker-server.herokuapp.com/steam/${id}`;
+    // `http://localhost:5000/csgo/${id}`;                     
+    // `https://game-stat-tracker-server.herokuapp.com/csgo/${id}`;
+
+    let steamUrl = `http://localhost:5000/steam/${id}`;
+
+  //   http://localhost:5000/steam/${id};
+  // `https://game-stat-tracker-server.herokuapp.com/steam/${id}`;
 
     const requestCsgo = axios.get(csgoUrl);
     const requestSteam = axios.get(steamUrl);
@@ -69,7 +73,7 @@ function SteamIdForm(props) {
 return (
   <div id="section2" className={props.className}>
     <h1>CS:GO personal stat checker</h1>
-    <h5 id ="steam-id-example">Try</h5>
+    <h5 id="steam-id-example">Try: 76561198106917090</h5>
 
     <div class="search_wrap search_wrap_6">
       <div class="search_box">
