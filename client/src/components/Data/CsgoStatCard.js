@@ -9,7 +9,7 @@ const statNumbers = props.dataNumbers;
 console.log(statNumbers);
     return (
       <div className="csgo-stat-card">
-        <h6 className="data-title">General Statistics</h6>
+        <h6 className="data-title">{props.title}</h6>
         <div className="csgo-data-container">
           <CsgoDataCard data={statData[statNumbers.n1]}></CsgoDataCard>
           <CsgoDataCard data={statData[statNumbers.n2]}></CsgoDataCard>
