@@ -8,7 +8,6 @@ function TournamentsData(props) {
         <h1 className="tourn-title">Tournaments</h1>
         <div id="tournament-cards">
           {props.data.map((data) => {
-
             return (
               <Card
                 img={data.league.image_url}
