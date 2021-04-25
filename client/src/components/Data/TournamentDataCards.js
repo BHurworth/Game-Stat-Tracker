@@ -14,7 +14,7 @@ function TournamentDataCards(props) {
       <img src={props.img}></img>
       <h1 className="tourn-title">{props.name}</h1>
       <h3 className="tourn-starttime">Starts at: {beginTimeUk}</h3>
-      <h3>Ends at: {endTimeUk}</h3>
+      <h3 className="tourn-endtime">Ends at: {endTimeUk}</h3>
     </div>
   );
 }
