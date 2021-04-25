@@ -3,22 +3,37 @@ import Card from "../Navigation/Card.js";
 import SteamIdForm from "../Data/SteamIdForm.js";
 import Tournaments from "../Data/Tournaments.js";
 import axios from "axios";
-import Spinner from "../Misc/Spinner.js"
+import Spinner from "../Misc/Spinner.js";
+import {CsgoNews} from "../Data/CsgoNews.js"
 import "../../App.css";
 
 export function CsgoNav() {
   const [dataLoaded, setdataLoaded] = useState(false);
 
   const getData = () => {
-    const url =
-      "http://localhost:5000/csgo/tournaments";
+    const csgoTournUrl = "http://localhost:5000/csgo/tournaments";
 
-      //"https://game-stat-tracker-server.herokuapp.com/csgo/tournaments";
+    // "http://localhost:5000/csgo/tournaments";
+    //"https://game-stat-tracker-server.herokuapp.com/csgo/tournaments";
 
-    axios.get(url).then((response) => {
-      settournamentData(response.data);
-      setdataLoaded(true);
-    });
+    const csgoNewsUrl = "http://localhost:5000/csgo/news";
+
+    // "http://localhost:5000/csgo/news";
+    //"https://game-stat-tracker-server.herokuapp.com/csgo/news";
+
+    const requestTourn = axios.get(csgoTournUrl);
+    const requestNews = axios.get(csgoNewsUrl);
+
+    axios
+      .all([requestTourn,requestNews])
+      .then(axios.spread((...responses) => {
+        const tournamentResponse = responses[0];
+        const newsResponse = responses[1];
+        settournamentData(tournamentResponse.data);
+        setnewsData(newsResponse.data.appnews.newsitems);
+        console.log(newsResponse.data.appnews.newsitems);
+        setdataLoaded(true);
+      }));
   };
 
   const [mounted, setMounted] = useState(false);
@@ -26,7 +41,6 @@ export function CsgoNav() {
   if (!mounted) {
     // setTimeout(() => getData(), 1000);
     getData();
-
   }
 
   useEffect(() => {
@@ -40,9 +54,10 @@ export function CsgoNav() {
   };
 
   const [tournamentData, settournamentData] = useState([{}]);
+    const [newsData, setnewsData] = useState([{}]);
 
   if (dataLoaded === false) {
-    return <Spinner size="large"></Spinner>
+    return <Spinner size="large"></Spinner>;
   } else if (dataLoaded === true) {
     return (
       <>
@@ -60,17 +75,21 @@ export function CsgoNav() {
               toggleTab(3);
             }}
           >
-            Teams
+            News
           </h1>
         </div>
         <SteamIdForm
           className={toggleState === 1 ? "active-tab" : "tab"}
-          id = "trigger"
+          id="trigger"
         ></SteamIdForm>
         <Tournaments
           className={toggleState === 2 ? "active-tab" : "tab"}
           data={tournamentData}
         ></Tournaments>
+        <CsgoNews
+          className={toggleState === 3 ? "active-tab" : "tab"}
+          data={newsData}
+        ></CsgoNews>
       </>
     );
   }
