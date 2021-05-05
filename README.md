@@ -6,6 +6,7 @@ A MERN stack project-website created to allow people to check their stats, see t
 ## Project Status
 
 This project is currently in development. Project only has functionality for 1 out of 3 games (CS:GO) and currently lacks a blog feature.
+I also need to add a 404 page and responsive design.
 
 ## Project Screen Shots
 
@@ -43,4 +44,4 @@ grasp the concept of React.js state and the idea of passing functions/state down
 
 I used React.js, Node.js and Express.js to create this project. I chose to use create-react-app, as it would save a lot of time with getting the project up and 
 running. Better to get stuck in learning the new technology. However, in the future I plan to setup my own `webpack.config.js` file to better understand the build
-process.
+process. 
