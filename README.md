@@ -1,5 +1,6 @@
 # Game-Stat-Tracker
 A MERN stack project-website created to allow people to check their stats, see the latest news and see upcoming tournaments on multiple games.
+- https://hungry-poitras-25342f.netlify.app/
 
 
 ## Project Status
