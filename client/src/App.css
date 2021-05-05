@@ -477,19 +477,17 @@ table th {
   text-align: center;
 }
 
-
 .csgo-stat-card {
   margin-top: 50px;
-   margin-bottom: 50px;
+  margin-bottom: 50px;
   width: 75%;
   height: 50vh;
   border-radius: 45px;
   background: none;
- 
 }
 
 .csgo-data-container {
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   border-radius: 45px;
   display: flex;
   flex-direction: row;
@@ -503,7 +501,7 @@ table th {
 
 .data-title {
   background: none;
-  position:absolute;
+  position: absolute;
   margin-top: 30px;
   margin-left: 40px;
   font-size: 1.5em;
@@ -514,14 +512,14 @@ table th {
   position: relative;
   background-color: white;
   border-style: solid;
-  border-color:black;
+  border-color: black;
   height: 100px;
   min-width: 200px;
   border-radius: 20px;
 }
 
 .csgo-data-card-h4 {
-   font-size: 1.2em;
+  font-size: 1.2em;
   margin-left: 15px;
   position: absolute;
   margin-top: 10px;
@@ -671,7 +669,6 @@ table th {
 .tourn-starttime {
   margin-top: 25px;
 }
-
 
 @media (min-width: 992px) {
   * {
